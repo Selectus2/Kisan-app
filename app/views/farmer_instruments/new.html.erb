@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create New Advertisement</title>
+</head>
+<body>
+	<h1> Create New</h1>
+	<%= form_with scope: :farmer_instrument, url: farmer_instruments_path,local: true do |form| %>
+	<p>
+	<%= form.select(:farmer_id, Farmer.all.collect{|f| [f.full_name,f.id]}, :prompt => "Select Farmer") %>
+	</p>
+	<p>
+	<%= form.select(:instrument_id, Instrument.all.collect{|f| [f.name,f.id]}, :prompt => "Select Instrument") %>
+	</p>
+  <p>
+    <%= form.label :rent_per_hour %><br>
+    <%= form.text_field :rent_per_hour %>
+  </p>
+ 
+  <p>
+    <%= form.label :deposit %><br>
+    <%= form.text_field :deposit %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+</body>
+</html>

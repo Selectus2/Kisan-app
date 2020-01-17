@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<h2> Farmer Instruments</h2>
+	<br>
+	<button><%=	 link_to 'Post new advertisement',new_farmer_instrument_path %></button>
+	<br>
+	<br>
+	<table class="table table-striped">
+		<tr>
+			<th>Instrument ID</th>
+			<th>Owner</th>
+			<th>Deposit</th>
+			<th>Rent Per Hour</th>
+			<th>View Details</th>
+		</tr>
+	
+		<% @ads.each do |ad| %>
+			<tr>
+				<td><%= ad.instrument.name %></td>
+				<td><%= ad.farmer.full_name %></td>
+				<td><%= ad.deposit %></td>
+				<td><%= ad.rent_per_hour %></td>
+				<td><%=	 link_to 'View',farmer_instrument_path(ad.id) %></td>
+			</tr>
+		<% end %>
+	</table>
+</div>
+</body>
+</html>
