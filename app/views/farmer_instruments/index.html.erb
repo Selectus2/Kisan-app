@@ -16,13 +16,14 @@
 	<button><%=	 link_to 'Post new advertisement',new_farmer_instrument_path %></button>
 	<br>
 	<br>
-	<table class="table table-striped">
+	<table class="table table-hover">
 		<tr>
-			<th>Instrument ID</th>
+			<th class="thead-dark">Instrument ID</th>
 			<th>Owner</th>
 			<th>Deposit</th>
 			<th>Rent Per Hour</th>
 			<th>View Details</th>
+			<th>Edit</th>
 		</tr>
 	
 		<% @ads.each do |ad| %>
@@ -32,9 +33,13 @@
 				<td><%= ad.deposit %></td>
 				<td><%= ad.rent_per_hour %></td>
 				<td><%=	 link_to 'View',farmer_instrument_path(ad.id) %></td>
+				<td><%=	 link_to 'Edit',edit_farmer_instrument_path(ad.id) %></td>
 			</tr>
 		<% end %>
 	</table>
+</div>
+<div class=>
+	
 </div>
 </body>
 </html>

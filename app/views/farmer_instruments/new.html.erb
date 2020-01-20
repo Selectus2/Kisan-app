@@ -4,6 +4,7 @@
 	<title>Create New Advertisement</title>
 </head>
 <body>
+	<div>
 	<h1> Create New</h1>
 	<%= form_with scope: :farmer_instrument, url: farmer_instruments_path,local: true do |form| %>
 	<p>
@@ -21,10 +22,19 @@
     <%= form.label :deposit %><br>
     <%= form.text_field :deposit %>
   </p>
- 
+ 	<p>
+    <%= form.label :available_from %><br>
+    <%= form.date_field :available_from %>
+  </p>
+  <p>
+    <%= form.label :available_to %><br>
+    <%= form.date_field :available_to %>
+  </p>
+  
   <p>
     <%= form.submit %>
   </p>
-<% end %>
+	<% end %>
+	</div>
 </body>
 </html>

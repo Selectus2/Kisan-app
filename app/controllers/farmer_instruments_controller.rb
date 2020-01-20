@@ -18,15 +18,19 @@ class FarmerInstrumentsController < ApplicationController
 	def create
 		#render plain: params[:farmer_instrument].inspect
 		#byebug
-		@advertisement = FarmerInstrument.create(permit_params)
+		@ad = FarmerInstrument.create(permit_params)
  		#redirect_to farmer_instruments_path(@advertisement)
- 		redirect_to farmer_instrument_path(@advertisement)
+ 		redirect_to farmer_instrument_path(@ad)
  		
+	end
+
+	def edit
+		@ad_to_edit = FarmerInstrument.find(params[:id])
 	end
 
 	private 
 
 	def permit_params
-		params.require(:farmer_instrument).permit(:rent_per_hour, :deposit,:farmer_id,:instrument_id)
+		params.require(:farmer_instrument).permit(:rent_per_hour, :deposit,:farmer_id,:instrument_id,:available_from, :available_to)
 	end
 end
