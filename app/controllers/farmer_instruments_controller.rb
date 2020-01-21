@@ -27,6 +27,17 @@ class FarmerInstrumentsController < ApplicationController
 	def edit
 		@ad_to_edit = FarmerInstrument.find(params[:id])
 	end
+	"""
+	def update
+		@update_form=FarmerInstrument.find(params[:id])
+		@update_form.update(:rent_per_hour:params[])
+	end
+	"""
+	def destroy
+  	@ad = FarmerInstrument.find(params[:id])
+  	@ad.destroy
+		redirect_to farmer_instruments_path
+	end
 
 	private 
 

@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="container">
-	<h2> Farmer Instruments</h2>
+	<h1 text-align: center;> Farmer Instruments</h1>
 	<br>
 	<button><%=	 link_to 'Post new advertisement',new_farmer_instrument_path %></button>
 	<br>
@@ -23,7 +23,8 @@
 			<th>Deposit</th>
 			<th>Rent Per Hour</th>
 			<th>View Details</th>
-			<th>Edit</th>
+			<th>Edit Details</th>
+			<th>Delete Details</th>
 		</tr>
 	
 		<% @ads.each do |ad| %>
@@ -34,12 +35,11 @@
 				<td><%= ad.rent_per_hour %></td>
 				<td><%=	 link_to 'View',farmer_instrument_path(ad.id) %></td>
 				<td><%=	 link_to 'Edit',edit_farmer_instrument_path(ad.id) %></td>
+				<td><%= link_to 'Delete Advertisement', farmer_instrument_path(ad.id),method: :delete,data: { confirm: 'Are You sure?' } %></td>
 			</tr>
 		<% end %>
 	</table>
 </div>
-<div class=>
-	
 </div>
 </body>
 </html>
