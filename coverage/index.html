@@ -14,18 +14,18 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-01-21T16:22:20+05:30">2020-01-21T16:22:20+05:30</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-01-22T10:31:02+05:30">2020-01-22T10:31:02+05:30</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">66.67%</span></span>
+    (<span class="covered_percent"><span class="red">75.0%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.73
+         0.86
        </span>
     </span> hits/line)
   </h2>
@@ -33,8 +33,8 @@
   <div>
     <b>14</b> files in total.
     <b>72</b> relevant lines. 
-    <span class="green"><b>48</b> lines covered</span> and
-    <span class="red"><b>24</b> lines missed </span>
+    <span class="green"><b>54</b> lines covered</span> and
+    <span class="red"><b>18</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -82,12 +82,12 @@
       
       <tr>
         <td class="strong"><a href="#f9932dc70696a507e01309c3250f3c37e02865b4" class="src_link" title="app/controllers/farmer_instruments_controller.rb">app/controllers/farmer_instruments_controller.rb</a></td>
-        <td class="red strong">52.38 %</td>
+        <td class="yellow strong">80.95 %</td>
         <td>47</td>
         <td>21</td>
-        <td>11</td>
-        <td>10</td>
-        <td>0.5</td>
+        <td>17</td>
+        <td>4</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
@@ -157,7 +157,7 @@
         <td>16</td>
         <td>16</td>
         <td>0</td>
-        <td>1.3</td>
+        <td>1.5</td>
       </tr>
       
       <tr>
@@ -199,11 +199,11 @@
           <div class="file_list_container" id="Controllers">
   <h2>
     <span class="group_name">Controllers</span>
-    (<span class="covered_percent"><span class="red">54.55%</span></span>
+    (<span class="covered_percent"><span class="yellow">81.82%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.52
+         0.81
        </span>
     </span> hits/line)
   </h2>
@@ -211,8 +211,8 @@
   <div>
     <b>2</b> files in total.
     <b>22</b> relevant lines. 
-    <span class="green"><b>12</b> lines covered</span> and
-    <span class="red"><b>10</b> lines missed </span>
+    <span class="green"><b>18</b> lines covered</span> and
+    <span class="red"><b>4</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -240,12 +240,12 @@
       
       <tr>
         <td class="strong"><a href="#f9932dc70696a507e01309c3250f3c37e02865b4" class="src_link" title="app/controllers/farmer_instruments_controller.rb">app/controllers/farmer_instruments_controller.rb</a></td>
-        <td class="red strong">52.38 %</td>
+        <td class="yellow strong">80.95 %</td>
         <td>47</td>
         <td>21</td>
-        <td>11</td>
-        <td>10</td>
-        <td>0.5</td>
+        <td>17</td>
+        <td>4</td>
+        <td>0.8</td>
       </tr>
       
     </tbody>
@@ -317,7 +317,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.14
+         1.24
        </span>
     </span> hits/line)
   </h2>
@@ -369,7 +369,7 @@
         <td>16</td>
         <td>16</td>
         <td>0</td>
-        <td>1.3</td>
+        <td>1.5</td>
       </tr>
       
       <tr>
@@ -725,11 +725,11 @@
         <div class="source_table" id="f9932dc70696a507e01309c3250f3c37e02865b4">
   <div class="header">
     <h3>app/controllers/farmer_instruments_controller.rb</h3>
-    <h4><span class="red">52.38 %</span> covered</h4>
+    <h4><span class="yellow">80.95 %</span> covered</h4>
     <div>
       <b>21</b> relevant lines. 
-      <span class="green"><b>11</b> lines covered</span> and
-      <span class="red"><b>10</b> lines missed.</span>
+      <span class="green"><b>17</b> lines covered</span> and
+      <span class="red"><b>4</b> lines missed.</span>
     </div>
   </div>
   
@@ -778,20 +778,20 @@
           <code class="ruby">	def show</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="8">
-          
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
           
           <code class="ruby">		@ad = FarmerInstrument.find(params[:id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="9">
-          
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
           
           <code class="ruby">		@farmer_data = @ad.farmer</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="10">
-          
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
           
           <code class="ruby">		@instrument_data = @ad.instrument</code>
         </li>
@@ -952,20 +952,20 @@
           <code class="ruby">	def destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="37">
-          
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
           
           <code class="ruby">  	@ad = FarmerInstrument.find(params[:id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="38">
-          
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
           
           <code class="ruby">  	@ad.destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="39">
-          
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
           
           <code class="ruby">		redirect_to farmer_instruments_path</code>
         </li>
@@ -1367,14 +1367,14 @@
           <code class="ruby">	def titleize_names</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="18">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="18">
+          <span class="hits">5</span>
           
           <code class="ruby">		self.first_name = self.first_name.titleize</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="19">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="19">
+          <span class="hits">5</span>
           
           <code class="ruby">		self.last_name = self.last_name.titleize</code>
         </li>
