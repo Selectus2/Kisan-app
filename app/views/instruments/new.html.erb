@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add new Instrument</title>
+</head>
+<body>
+	<div>
+	<h1> Create New</h1>
+	<%= form_with scope: :instrument, url: instruments_path,local: true do |form| %>
+  <p>
+    <%= form.label :name  %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.label :brand %><br>
+    <%= form.text_field :brand %>
+  </p>
+ 	<p>
+    <%= form.label :specification %><br>
+    <%= form.text_field :specification %>
+  </p>
+	<p>
+	<%= form.file_field :image %>
+	</p>
+  <p>
+    <%= form.submit %>
+  </p>
+	<% end %>
+	</div>
+</body>
+</html>
