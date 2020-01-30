@@ -4,21 +4,17 @@
 	<title></title>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</head>
+  </head>
 <body>
 <div class="container">
 	<h1 text-align: center;> Farmer Instruments</h1>
 	<br>
-	<button><%=	 link_to 'Post new advertisement',new_farmer_instrument_path %></button>
+	<button class="btn btn-outline-primary"><%=	 link_to 'Post new advertisement',new_farmer_instrument_path %></button>
 	<br>
 	<br>
-	<table class="table table-hover">
+	<table class="container">
 		<tr>
-			<th class="thead-dark">Instrument ID</th>
+			<th>Instrument</th>
 			<th>Owner</th>
 			<th>Deposit</th>
 			<th>Rent Per Hour</th>
@@ -26,10 +22,11 @@
 			<th>Edit Details</th>
 			<th>Delete Details</th>
 		</tr>
-	
-		<% @ads.each do |ad| %>
+		<tbody>
+
+		<% @ads.where.not("farmer_id=#{current_farmer.id}").each do |ad| %>
 			<tr>
-				<td><%= ad.instrument.name %></td>
+				<td ><%= ad.instrument.name %></td>
 				<td><%= ad.farmer.full_name %></td>
 				<td><%= ad.deposit %></td>
 				<td><%= ad.rent_per_hour %></td>
@@ -38,8 +35,8 @@
 				<td><%= link_to 'Delete Advertisement', farmer_instrument_path(ad.id),method: :delete,data: { confirm: 'Are You sure?' } %></td>
 			</tr>
 		<% end %>
+		</tbody>
 	</table>
-</div>
 </div>
 </body>
 </html>

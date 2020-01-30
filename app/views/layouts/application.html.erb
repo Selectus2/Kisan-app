@@ -4,28 +4,39 @@
     <title>Kisan</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <link href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css' rel='stylesheet' />
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href ="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel = "stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href = "CSS/styles.css" rel = "stylesheet" type ="text/css"><%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div class="container">
     <% if notice %>
       <p class="alert alert-success"><%= notice %></p>
     <% end %>
     <% if alert %>
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
-    <p class="navbar-text float-right">
+    <div class= "header-content">
+    <p class="navbar navbar-expand-sm navbar-dark py-0" id = "nav">
     <% if farmer_signed_in? %>
-      Logged in as <strong><%= current_farmer.email %></strong>.
+      Logged in as  <strong><%=" #{current_farmer.full_name} "%></strong>.
     <%= link_to 'Edit profile', edit_farmer_registration_path, :class => 'navbar-link' %> |
-    <%= link_to "Logout", destroy_farmer_session_path, method: :delete, :class => 'navbar-link'  %>
+    <%= link_to "Sign out", destroy_farmer_session_path,:method => 'delete', :class => 'navbar-link'  %>
     <% else %>
-    <%= link_to "Sign up", new_farmer_registration_path, :class => 'navbar-link'  %> |
+    <%= link_to "Sign up", new_farmer_registration_path, :class => 'navbar-nav-link-padding-x:'  %> |
     <%= link_to "Login", new_farmer_session_path, :class => 'navbar-link'  %>
     <% end %>
-</p>
+  </p>
+  </div>
+  </div>
     <%= yield %>
   </body>
 </html>

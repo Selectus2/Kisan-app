@@ -4,28 +4,24 @@
 	<title></title>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="container-fluid">
+	<div class="container">
 	<h2> Farmer Details</h2>
 	<h5>Name: <%= @farmer_data.full_name %> </h5>
 	<h5>Contact: <%= @farmer_data.mobile_number %></h5>
 	<h5>Email: <%= @farmer_data.email %> </h5>
 	</div>
 	<br>
-	<div class="container-fluid">
-	<h1>Instrument Details</h1>
+	<div class="container">
+	<h2>Instrument Details</h2>
 
 	<h5>Name: <%= @instrument_data.name %> </h5>
 	<h5>Brand: <%= @instrument_data.brand %> </h5>
 	<h5>Specification: <%= @instrument_data.specification %></h5>
 	</div>
 	<br>
-	<div class="container-fluid">
+	<div class="container">
 	<h5>Rent Per Hour:  <%= @ad.rent_per_hour %></h5>
 	<h5>Availability Period: <%= @ad.available_from %> to <%= @ad.available_to %></h5>
 	</div>

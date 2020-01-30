@@ -12,7 +12,7 @@ class FarmerInstrumentsController < ApplicationController
 
 	def new
 		#@farmer_list = Farmer.all.collect{|u| [u.first_name,u.id]}
-		#@instrument_lsit = Instrument.all.collect{|u| [u.name,u.id]} 
+		#@instrument_lsit = Instrument.all.collect{|u| [u.name,u.id]}
 	end
 
 	def create
@@ -20,8 +20,8 @@ class FarmerInstrumentsController < ApplicationController
 		#byebug
 		@ad = FarmerInstrument.create(permit_params)
  		#redirect_to farmer_instruments_path(@advertisement)
- 		redirect_to farmer_instrument_path(@ad)
- 		
+ 		redirect_to farmer_instruments_path
+
 	end
 
 	def edit
@@ -39,7 +39,7 @@ class FarmerInstrumentsController < ApplicationController
 		redirect_to farmer_instruments_path
 	end
 
-	private 
+	private
 
 	def permit_params
 		params.require(:farmer_instrument).permit(:rent_per_hour, :deposit,:farmer_id,:instrument_id,:available_from, :available_to)
