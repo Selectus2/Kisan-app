@@ -20,7 +20,7 @@ class InstrumentsController < ApplicationController
 		#byebug
 		@ad = Instrument.create(permit_params)
  		#redirect_to farmer_instruments_path(@advertisement)
- 		redirect_to instrument_path(@ad)
+ 		redirect_to new_farmer_instrument_path
 
 	end
 

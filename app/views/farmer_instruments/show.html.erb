@@ -6,24 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<div class="container">
+	<div class="row">
+	<div class="column" Align='center'>
 	<h2> Farmer Details</h2>
-	<h5>Name: <%= @farmer_data.full_name %> </h5>
-	<h5>Contact: <%= @farmer_data.mobile_number %></h5>
-	<h5>Email: <%= @farmer_data.email %> </h5>
+	<h5><strong>Name: </strong> <%= @farmer_data.full_name %> </h5>
+	<h5><strong>Contact:</strong> <%= @farmer_data.mobile_number %></h5>
+	<h5><strong>Email:</strong> <%= @farmer_data.email %> </h5>
 	</div>
-	<br>
-	<div class="container">
+	<div class="column" align='left'>
 	<h2>Instrument Details</h2>
-
-	<h5>Name: <%= @instrument_data.name %> </h5>
-	<h5>Brand: <%= @instrument_data.brand %> </h5>
-	<h5>Specification: <%= @instrument_data.specification %></h5>
+	<h5><strong>Name:</strong> <%= @instrument_data.name %> </h5>
+	<h5><strong>Brand:</strong> <%= @instrument_data.brand %> </h5>
+	<h5><strong>Specification:</strong> <%= @instrument_data.specification %></h5>
+	<h5><strong>Picture</strong></h5>
+	<%= image_tag(@instrument_data.image_url, :width => 300) if @instrument_data.image.present? %>
+	</div>
 	</div>
 	<br>
 	<div class="container">
-	<h5>Rent Per Hour:  <%= @ad.rent_per_hour %></h5>
-	<h5>Availability Period: <%= @ad.available_from %> to <%= @ad.available_to %></h5>
+		<h2> Renting details </h2>
+	<h5><strong>Rent Per Day:</strong>  Rs.<%= @ad.rent_per_hour %></h5>
+	<h5><strong>Availability Period:</strong> <%= distance_of_time_in_words(@ad.available_from, @ad.available_to)%>  (<%= @ad.available_from.to_date %>  to  <%= @ad.available_to.to_date %>)</h5>
 	</div>
 </body>
 </html>

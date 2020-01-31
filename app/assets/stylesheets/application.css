@@ -5,11 +5,22 @@
 	https://goo.gl/EaUPrt
 	===================
 	Author: @PableraShow
-
+*= require rails_bootstrap_forms
  */
 
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+.column {
+  float: right;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -28,8 +39,8 @@ h1 {
 }
 
 h2 {
-  font-size:1em;
-  font-weight: 300;
+  font-size:2.5em;
+  font-weight: 500;
   text-align: center;
   display: block;
   line-height:1em;

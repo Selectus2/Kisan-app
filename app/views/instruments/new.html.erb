@@ -6,18 +6,18 @@
 <body>
 	<div>
 	<h1> Create New</h1>
-	<%= form_with scope: :instrument, url: instruments_path,local: true do |form| %>
+	<%= bootstrap_form_with scope: :instrument, url: instruments_path,local: true do |form| %>
   <p>
-    <%= form.label :name  %><br>
+    <%# <%= form.label :name  %>
     <%= form.text_field :name %>
   </p>
 
   <p>
-    <%= form.label :brand %><br>
+    <%# <%= form.label :brand %>
     <%= form.text_field :brand %>
   </p>
  	<p>
-    <%= form.label :specification %><br>
+    <%# <%= form.label :specification %>
     <%= form.text_field :specification %>
   </p>
 	<p>

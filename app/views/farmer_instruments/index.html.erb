@@ -7,7 +7,7 @@
   </head>
 <body>
 <div class="container">
-	<h1 text-align: center;> Farmer Instruments</h1>
+	<h1 text-align: center;> Instruments for rent</h1>
 	<br>
 	<button class="btn btn-outline-primary"><%=	 link_to 'Post new advertisement',new_farmer_instrument_path %></button>
 	<br>
@@ -24,9 +24,9 @@
 		</tr>
 		<tbody>
 
-		<% @ads.where.not("farmer_id=#{current_farmer.id}").each do |ad| %>
+		<% @ads.where.not("farmer_id=? or is_available=?","#{current_farmer.id}","#{false}").each do |ad| %>
 			<tr>
-				<td ><%= ad.instrument.name %></td>
+				<td><%= ad.instrument.name %></td>
 				<td><%= ad.farmer.full_name %></td>
 				<td><%= ad.deposit %></td>
 				<td><%= ad.rent_per_hour %></td>

@@ -25,18 +25,20 @@
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
     <div class= "header-content">
-    <p class="navbar navbar-expand-sm navbar-dark py-0" id = "nav">
-    <% if farmer_signed_in? %>
-      Logged in as  <strong><%=" #{current_farmer.full_name} "%></strong>.
+    <nav class="navbar navbar-default">
+    <p align='right'><% if farmer_signed_in? %>
+      Logged in as  <strong><%=" #{current_farmer.full_name} "%></strong></p>
+    <p align='right'>
     <%= link_to 'Edit profile', edit_farmer_registration_path, :class => 'navbar-link' %> |
     <%= link_to "Sign out", destroy_farmer_session_path,:method => 'delete', :class => 'navbar-link'  %>
     <% else %>
     <%= link_to "Sign up", new_farmer_registration_path, :class => 'navbar-nav-link-padding-x:'  %> |
     <%= link_to "Login", new_farmer_session_path, :class => 'navbar-link'  %>
     <% end %>
-  </p>
+    </p>
+  </nav>
   </div>
-  </div>
+  <!-- </div> -->
     <%= yield %>
   </body>
 </html>

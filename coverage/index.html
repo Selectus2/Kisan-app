@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>Code coverage for Kisan</title>
+    <title>Code coverage for Kisan-app</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.2/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.2/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-01-22T10:31:02+05:30">2020-01-22T10:31:02+05:30</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-01-31T11:09:12+05:30">2020-01-31T11:09:12+05:30</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">75.0%</span></span>
+    (<span class="covered_percent"><span class="red">31.92%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.86
+         0.32
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>14</b> files in total.
-    <b>72</b> relevant lines. 
-    <span class="green"><b>54</b> lines covered</span> and
-    <span class="red"><b>18</b> lines missed </span>
+    <b>31</b> files in total.
+    <b>260</b> relevant lines. 
+    <span class="green"><b>83</b> lines covered</span> and
+    <span class="red"><b>177</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -51,7 +51,7 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#d738e296e2c10c603b8b13291849969488ecb1f3" class="src_link" title="app/channels/application_cable/channel.rb">app/channels/application_cable/channel.rb</a></td>
+        <td class="strong"><a href="#ac3a0e1cfaa01e8bfd6588db328f7d6a0411eea6" class="src_link" title="app/channels/application_cable/channel.rb">app/channels/application_cable/channel.rb</a></td>
         <td class="red strong">0.0 %</td>
         <td>4</td>
         <td>4</td>
@@ -61,7 +61,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#ce9daf36112debeeb530d774a30f0a2033e40bb6" class="src_link" title="app/channels/application_cable/connection.rb">app/channels/application_cable/connection.rb</a></td>
+        <td class="strong"><a href="#eaef5e7ae34c2b3e086b829d60295ea3f3b10f20" class="src_link" title="app/channels/application_cable/connection.rb">app/channels/application_cable/connection.rb</a></td>
         <td class="red strong">0.0 %</td>
         <td>4</td>
         <td>4</td>
@@ -71,7 +71,117 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#b3d69a744dea7ca94a74984f638abf57b0d7e747" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="strong"><a href="#67a838c572d8dc86cbe9e1d7b976f573ced51c2b" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="red strong">70.0 %</td>
+        <td>16</td>
+        <td>10</td>
+        <td>7</td>
+        <td>3</td>
+        <td>0.7</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#d8e8c73d3a102f408387008fc66ad0dd4dc47dbe" class="src_link" title="app/controllers/farmer_instruments_controller.rb">app/controllers/farmer_instruments_controller.rb</a></td>
+        <td class="red strong">34.62 %</td>
+        <td>54</td>
+        <td>26</td>
+        <td>9</td>
+        <td>17</td>
+        <td>0.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#38e64d272b1d7d6fa464d42b0fead81c4498c1be" class="src_link" title="app/controllers/farmers/confirmations_controller.rb">app/controllers/farmers/confirmations_controller.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>30</td>
+        <td>2</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#a1f8ff8c400b9ad0b85309492fd9391fcddca5e3" class="src_link" title="app/controllers/farmers/omniauth_callbacks_controller.rb">app/controllers/farmers/omniauth_callbacks_controller.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>30</td>
+        <td>2</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#2e5e468cbbca0ab49a3b70804ef91ba8eeaaf109" class="src_link" title="app/controllers/farmers/passwords_controller.rb">app/controllers/farmers/passwords_controller.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>34</td>
+        <td>2</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#0988c3c0b8248d9bab27609be0d2efa510e92187" class="src_link" title="app/controllers/farmers/registrations_controller.rb">app/controllers/farmers/registrations_controller.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>78</td>
+        <td>13</td>
+        <td>0</td>
+        <td>13</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#d40978c41b2cc048f23dc0a2caf5921b40a38f0c" class="src_link" title="app/controllers/farmers/sessions_controller.rb">app/controllers/farmers/sessions_controller.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>27</td>
+        <td>2</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#2fbafe493ee8aa48a471c77cffcd512f8f48910b" class="src_link" title="app/controllers/farmers/unlocks_controller.rb">app/controllers/farmers/unlocks_controller.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>30</td>
+        <td>2</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#16d5b8e2b6f201e32fd3f6110f07c3a0f2cf4a0d" class="src_link" title="app/controllers/farmers_controller.rb">app/controllers/farmers_controller.rb</a></td>
+        <td class="red strong">47.37 %</td>
+        <td>47</td>
+        <td>19</td>
+        <td>9</td>
+        <td>10</td>
+        <td>0.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#bbc6648aab0ef4350abc6fa85b4b19522c935ef2" class="src_link" title="app/controllers/instruments_controller.rb">app/controllers/instruments_controller.rb</a></td>
+        <td class="red strong">47.37 %</td>
+        <td>47</td>
+        <td>19</td>
+        <td>9</td>
+        <td>10</td>
+        <td>0.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#4a2a25e441aa866299f88595cc8868ef2769b574" class="src_link" title="app/controllers/rents_controller.rb">app/controllers/rents_controller.rb</a></td>
+        <td class="red strong">46.67 %</td>
+        <td>26</td>
+        <td>15</td>
+        <td>7</td>
+        <td>8</td>
+        <td>0.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#dbf73f6bc86a6aec1ceb1760b4650932403c700f" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>2</td>
         <td>1</td>
@@ -81,113 +191,173 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#f9932dc70696a507e01309c3250f3c37e02865b4" class="src_link" title="app/controllers/farmer_instruments_controller.rb">app/controllers/farmer_instruments_controller.rb</a></td>
-        <td class="yellow strong">80.95 %</td>
-        <td>47</td>
-        <td>21</td>
-        <td>17</td>
+        <td class="strong"><a href="#d81bfc882330a57ba6de165111e7f79325b461a9" class="src_link" title="app/helpers/farmer_instruments_helper.rb">app/helpers/farmer_instruments_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#c738de62708b0079fc810d3cade290398b3f8859" class="src_link" title="app/helpers/farmers_helper.rb">app/helpers/farmers_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#51df391c3f0a9b34a0a143042da1d8152eb9dc7f" class="src_link" title="app/helpers/instruments_helper.rb">app/helpers/instruments_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#3d53efd0d657f4b0c23a4ceadc371a84a3b40a2e" class="src_link" title="app/helpers/rents_helper.rb">app/helpers/rents_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#f50c76163fb3dc712cc99dce2845dfcab514b433" class="src_link" title="app/jobs/application_job.rb">app/jobs/application_job.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#a8a54e478f3aa9c0218d73a391b89b6bcf2e0bd3" class="src_link" title="app/mailers/application_mailer.rb">app/mailers/application_mailer.rb</a></td>
+        <td class="red strong">0.0 %</td>
         <td>4</td>
+        <td>4</td>
+        <td>0</td>
+        <td>4</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#861b270609a5bbf01ffed3d4794393b03c5042c9" class="src_link" title="app/models/address.rb">app/models/address.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>6</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#b22bedf5ca8a838f467b671408d24d889021fc71" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#7a85c7ffc05c1b2ffe17e78c3882908418e2dad0" class="src_link" title="app/models/farmer.rb">app/models/farmer.rb</a></td>
+        <td class="yellow strong">82.35 %</td>
+        <td>30</td>
+        <td>17</td>
+        <td>14</td>
+        <td>3</td>
         <td>0.8</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#6c7e64e9442e42bead0a40fcbf4040a00a493702" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#884f00c5fd618b3357e01b57172df75cf1f3fbc5" class="src_link" title="app/helpers/farmer_instruments_helper.rb">app/helpers/farmer_instruments_helper.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#1a0a4db920b16f83e1da436cf323410891639cbc" class="src_link" title="app/jobs/application_job.rb">app/jobs/application_job.rb</a></td>
-        <td class="red strong">0.0 %</td>
-        <td>2</td>
-        <td>2</td>
-        <td>0</td>
-        <td>2</td>
-        <td>0.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#e8d20523ac6c67d870585e2f78fb8ed5740b3ce7" class="src_link" title="app/mailers/application_mailer.rb">app/mailers/application_mailer.rb</a></td>
-        <td class="red strong">0.0 %</td>
-        <td>4</td>
-        <td>4</td>
-        <td>0</td>
-        <td>4</td>
-        <td>0.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#21ab39650d7eda5c8f05b85873df0355e745a2df" class="src_link" title="app/models/address.rb">app/models/address.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>6</td>
+        <td class="strong"><a href="#8914a7fa72fb009958de8a494a577c9ebd2eab5a" class="src_link" title="app/models/farmer_instrument.rb">app/models/farmer_instrument.rb</a></td>
+        <td class="red strong">70.0 %</td>
+        <td>15</td>
+        <td>10</td>
+        <td>7</td>
         <td>3</td>
-        <td>3</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td>0.7</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#c9ac1113ed01eafd35cfdc11586237fda37b21bf" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>3</td>
-        <td>2</td>
-        <td>2</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#28a8219d3825e1ed3ca32a1462e593f3f578fc14" class="src_link" title="app/models/farmer.rb">app/models/farmer.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>27</td>
-        <td>16</td>
-        <td>16</td>
-        <td>0</td>
-        <td>1.5</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#062308ae20d29003cd10d693df1f40d3c85b956e" class="src_link" title="app/models/farmer_instrument.rb">app/models/farmer_instrument.rb</a></td>
+        <td class="strong"><a href="#070321a931456a00b063c44762235f1f2a3c7326" class="src_link" title="app/models/instrument.rb">app/models/instrument.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>7</td>
-        <td>6</td>
-        <td>6</td>
+        <td>5</td>
+        <td>5</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#d5e32e7eff259f43fa924655a3af751e6203e4fb" class="src_link" title="app/models/instrument.rb">app/models/instrument.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>6</td>
-        <td>4</td>
-        <td>4</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#63cbbb2b3a30c12e73117a053409fb942e6a7cff" class="src_link" title="app/models/rent.rb">app/models/rent.rb</a></td>
+        <td class="strong"><a href="#fecbb19fb550ac767f3a526e6ae1bd18de340162" class="src_link" title="app/models/rent.rb">app/models/rent.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>6</td>
         <td>3</td>
         <td>3</td>
         <td>0</td>
         <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#4812b1c099d161792ed42df89bfe77e535ec15c5" class="src_link" title="app/policies/application_policy.rb">app/policies/application_policy.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>53</td>
+        <td>41</td>
+        <td>0</td>
+        <td>41</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#2c6cd8cff44e4492173f1424d0331e46fe494b0c" class="src_link" title="app/policies/farmer_instrument_policy.rb">app/policies/farmer_instrument_policy.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>27</td>
+        <td>18</td>
+        <td>0</td>
+        <td>18</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#c75e599b3a1833ba35914b22949a2bc2770601d6" class="src_link" title="app/policies/instrument_policy.rb">app/policies/instrument_policy.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>25</td>
+        <td>20</td>
+        <td>0</td>
+        <td>20</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#513a2b16b171b256fffbf019691dae9b40e3c452" class="src_link" title="app/uploaders/avatar_uploader.rb">app/uploaders/avatar_uploader.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>50</td>
+        <td>6</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#c0996ce53b3028625ed23eea04c5938282fbb985" class="src_link" title="app/uploaders/image_uploader.rb">app/uploaders/image_uploader.rb</a></td>
+        <td class="red strong">75.0 %</td>
+        <td>47</td>
+        <td>4</td>
+        <td>3</td>
+        <td>1</td>
+        <td>0.8</td>
       </tr>
       
     </tbody>
@@ -199,20 +369,20 @@
           <div class="file_list_container" id="Controllers">
   <h2>
     <span class="group_name">Controllers</span>
-    (<span class="covered_percent"><span class="yellow">81.82%</span></span>
+    (<span class="covered_percent"><span class="red">36.61%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.81
+         0.37
        </span>
     </span> hits/line)
   </h2>
   <a name="Controllers"></a>
   <div>
-    <b>2</b> files in total.
-    <b>22</b> relevant lines. 
-    <span class="green"><b>18</b> lines covered</span> and
-    <span class="red"><b>4</b> lines missed </span>
+    <b>11</b> files in total.
+    <b>112</b> relevant lines. 
+    <span class="green"><b>41</b> lines covered</span> and
+    <span class="red"><b>71</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -229,23 +399,113 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#b3d69a744dea7ca94a74984f638abf57b0d7e747" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td class="strong"><a href="#67a838c572d8dc86cbe9e1d7b976f573ced51c2b" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="red strong">70.0 %</td>
+        <td>16</td>
+        <td>10</td>
+        <td>7</td>
+        <td>3</td>
+        <td>0.7</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#f9932dc70696a507e01309c3250f3c37e02865b4" class="src_link" title="app/controllers/farmer_instruments_controller.rb">app/controllers/farmer_instruments_controller.rb</a></td>
-        <td class="yellow strong">80.95 %</td>
-        <td>47</td>
-        <td>21</td>
+        <td class="strong"><a href="#d8e8c73d3a102f408387008fc66ad0dd4dc47dbe" class="src_link" title="app/controllers/farmer_instruments_controller.rb">app/controllers/farmer_instruments_controller.rb</a></td>
+        <td class="red strong">34.62 %</td>
+        <td>54</td>
+        <td>26</td>
+        <td>9</td>
         <td>17</td>
-        <td>4</td>
-        <td>0.8</td>
+        <td>0.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#38e64d272b1d7d6fa464d42b0fead81c4498c1be" class="src_link" title="app/controllers/farmers/confirmations_controller.rb">app/controllers/farmers/confirmations_controller.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>30</td>
+        <td>2</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#a1f8ff8c400b9ad0b85309492fd9391fcddca5e3" class="src_link" title="app/controllers/farmers/omniauth_callbacks_controller.rb">app/controllers/farmers/omniauth_callbacks_controller.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>30</td>
+        <td>2</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#2e5e468cbbca0ab49a3b70804ef91ba8eeaaf109" class="src_link" title="app/controllers/farmers/passwords_controller.rb">app/controllers/farmers/passwords_controller.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>34</td>
+        <td>2</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#0988c3c0b8248d9bab27609be0d2efa510e92187" class="src_link" title="app/controllers/farmers/registrations_controller.rb">app/controllers/farmers/registrations_controller.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>78</td>
+        <td>13</td>
+        <td>0</td>
+        <td>13</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#d40978c41b2cc048f23dc0a2caf5921b40a38f0c" class="src_link" title="app/controllers/farmers/sessions_controller.rb">app/controllers/farmers/sessions_controller.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>27</td>
+        <td>2</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#2fbafe493ee8aa48a471c77cffcd512f8f48910b" class="src_link" title="app/controllers/farmers/unlocks_controller.rb">app/controllers/farmers/unlocks_controller.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>30</td>
+        <td>2</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#16d5b8e2b6f201e32fd3f6110f07c3a0f2cf4a0d" class="src_link" title="app/controllers/farmers_controller.rb">app/controllers/farmers_controller.rb</a></td>
+        <td class="red strong">47.37 %</td>
+        <td>47</td>
+        <td>19</td>
+        <td>9</td>
+        <td>10</td>
+        <td>0.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#bbc6648aab0ef4350abc6fa85b4b19522c935ef2" class="src_link" title="app/controllers/instruments_controller.rb">app/controllers/instruments_controller.rb</a></td>
+        <td class="red strong">47.37 %</td>
+        <td>47</td>
+        <td>19</td>
+        <td>9</td>
+        <td>10</td>
+        <td>0.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#4a2a25e441aa866299f88595cc8868ef2769b574" class="src_link" title="app/controllers/rents_controller.rb">app/controllers/rents_controller.rb</a></td>
+        <td class="red strong">46.67 %</td>
+        <td>26</td>
+        <td>15</td>
+        <td>7</td>
+        <td>8</td>
+        <td>0.5</td>
       </tr>
       
     </tbody>
@@ -286,7 +546,7 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#d738e296e2c10c603b8b13291849969488ecb1f3" class="src_link" title="app/channels/application_cable/channel.rb">app/channels/application_cable/channel.rb</a></td>
+        <td class="strong"><a href="#ac3a0e1cfaa01e8bfd6588db328f7d6a0411eea6" class="src_link" title="app/channels/application_cable/channel.rb">app/channels/application_cable/channel.rb</a></td>
         <td class="red strong">0.0 %</td>
         <td>4</td>
         <td>4</td>
@@ -296,7 +556,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#ce9daf36112debeeb530d774a30f0a2033e40bb6" class="src_link" title="app/channels/application_cable/connection.rb">app/channels/application_cable/connection.rb</a></td>
+        <td class="strong"><a href="#eaef5e7ae34c2b3e086b829d60295ea3f3b10f20" class="src_link" title="app/channels/application_cable/connection.rb">app/channels/application_cable/connection.rb</a></td>
         <td class="red strong">0.0 %</td>
         <td>4</td>
         <td>4</td>
@@ -313,20 +573,20 @@
           <div class="file_list_container" id="Models">
   <h2>
     <span class="group_name">Models</span>
-    (<span class="covered_percent"><span class="green">100.0%</span></span>
+    (<span class="covered_percent"><span class="yellow">85.0%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         1.24
+       <span class="red">
+         0.84
        </span>
     </span> hits/line)
   </h2>
   <a name="Models"></a>
   <div>
     <b>6</b> files in total.
-    <b>34</b> relevant lines. 
+    <b>40</b> relevant lines. 
     <span class="green"><b>34</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed </span>
+    <span class="red"><b>6</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -343,7 +603,7 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#21ab39650d7eda5c8f05b85873df0355e745a2df" class="src_link" title="app/models/address.rb">app/models/address.rb</a></td>
+        <td class="strong"><a href="#861b270609a5bbf01ffed3d4794393b03c5042c9" class="src_link" title="app/models/address.rb">app/models/address.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>6</td>
         <td>3</td>
@@ -353,7 +613,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#c9ac1113ed01eafd35cfdc11586237fda37b21bf" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
+        <td class="strong"><a href="#b22bedf5ca8a838f467b671408d24d889021fc71" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>3</td>
         <td>2</td>
@@ -363,37 +623,37 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#28a8219d3825e1ed3ca32a1462e593f3f578fc14" class="src_link" title="app/models/farmer.rb">app/models/farmer.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>27</td>
-        <td>16</td>
-        <td>16</td>
-        <td>0</td>
-        <td>1.5</td>
+        <td class="strong"><a href="#7a85c7ffc05c1b2ffe17e78c3882908418e2dad0" class="src_link" title="app/models/farmer.rb">app/models/farmer.rb</a></td>
+        <td class="yellow strong">82.35 %</td>
+        <td>30</td>
+        <td>17</td>
+        <td>14</td>
+        <td>3</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#062308ae20d29003cd10d693df1f40d3c85b956e" class="src_link" title="app/models/farmer_instrument.rb">app/models/farmer_instrument.rb</a></td>
+        <td class="strong"><a href="#8914a7fa72fb009958de8a494a577c9ebd2eab5a" class="src_link" title="app/models/farmer_instrument.rb">app/models/farmer_instrument.rb</a></td>
+        <td class="red strong">70.0 %</td>
+        <td>15</td>
+        <td>10</td>
+        <td>7</td>
+        <td>3</td>
+        <td>0.7</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#070321a931456a00b063c44762235f1f2a3c7326" class="src_link" title="app/models/instrument.rb">app/models/instrument.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>7</td>
-        <td>6</td>
-        <td>6</td>
+        <td>5</td>
+        <td>5</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#d5e32e7eff259f43fa924655a3af751e6203e4fb" class="src_link" title="app/models/instrument.rb">app/models/instrument.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>6</td>
-        <td>4</td>
-        <td>4</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#63cbbb2b3a30c12e73117a053409fb942e6a7cff" class="src_link" title="app/models/rent.rb">app/models/rent.rb</a></td>
+        <td class="strong"><a href="#fecbb19fb550ac767f3a526e6ae1bd18de340162" class="src_link" title="app/models/rent.rb">app/models/rent.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>6</td>
         <td>3</td>
@@ -440,7 +700,7 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#e8d20523ac6c67d870585e2f78fb8ed5740b3ce7" class="src_link" title="app/mailers/application_mailer.rb">app/mailers/application_mailer.rb</a></td>
+        <td class="strong"><a href="#a8a54e478f3aa9c0218d73a391b89b6bcf2e0bd3" class="src_link" title="app/mailers/application_mailer.rb">app/mailers/application_mailer.rb</a></td>
         <td class="red strong">0.0 %</td>
         <td>4</td>
         <td>4</td>
@@ -467,9 +727,9 @@
   </h2>
   <a name="Helpers"></a>
   <div>
-    <b>2</b> files in total.
-    <b>2</b> relevant lines. 
-    <span class="green"><b>2</b> lines covered</span> and
+    <b>5</b> files in total.
+    <b>5</b> relevant lines. 
+    <span class="green"><b>5</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -487,7 +747,7 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#6c7e64e9442e42bead0a40fcbf4040a00a493702" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
+        <td class="strong"><a href="#dbf73f6bc86a6aec1ceb1760b4650932403c700f" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>2</td>
         <td>1</td>
@@ -497,7 +757,37 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#884f00c5fd618b3357e01b57172df75cf1f3fbc5" class="src_link" title="app/helpers/farmer_instruments_helper.rb">app/helpers/farmer_instruments_helper.rb</a></td>
+        <td class="strong"><a href="#d81bfc882330a57ba6de165111e7f79325b461a9" class="src_link" title="app/helpers/farmer_instruments_helper.rb">app/helpers/farmer_instruments_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#c738de62708b0079fc810d3cade290398b3f8859" class="src_link" title="app/helpers/farmers_helper.rb">app/helpers/farmers_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#51df391c3f0a9b34a0a143042da1d8152eb9dc7f" class="src_link" title="app/helpers/instruments_helper.rb">app/helpers/instruments_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#3d53efd0d657f4b0c23a4ceadc371a84a3b40a2e" class="src_link" title="app/helpers/rents_helper.rb">app/helpers/rents_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>2</td>
         <td>1</td>
@@ -544,7 +834,7 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#1a0a4db920b16f83e1da436cf323410891639cbc" class="src_link" title="app/jobs/application_job.rb">app/jobs/application_job.rb</a></td>
+        <td class="strong"><a href="#f50c76163fb3dc712cc99dce2845dfcab514b433" class="src_link" title="app/jobs/application_job.rb">app/jobs/application_job.rb</a></td>
         <td class="red strong">0.0 %</td>
         <td>2</td>
         <td>2</td>
@@ -595,6 +885,93 @@
 </div>
 
         
+          <div class="file_list_container" id="Ungrouped">
+  <h2>
+    <span class="group_name">Ungrouped</span>
+    (<span class="covered_percent"><span class="red">3.37%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="red">
+         0.04
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="Ungrouped"></a>
+  <div>
+    <b>5</b> files in total.
+    <b>89</b> relevant lines. 
+    <span class="green"><b>3</b> lines covered</span> and
+    <span class="red"><b>86</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#4812b1c099d161792ed42df89bfe77e535ec15c5" class="src_link" title="app/policies/application_policy.rb">app/policies/application_policy.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>53</td>
+        <td>41</td>
+        <td>0</td>
+        <td>41</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#2c6cd8cff44e4492173f1424d0331e46fe494b0c" class="src_link" title="app/policies/farmer_instrument_policy.rb">app/policies/farmer_instrument_policy.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>27</td>
+        <td>18</td>
+        <td>0</td>
+        <td>18</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#c75e599b3a1833ba35914b22949a2bc2770601d6" class="src_link" title="app/policies/instrument_policy.rb">app/policies/instrument_policy.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>25</td>
+        <td>20</td>
+        <td>0</td>
+        <td>20</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#513a2b16b171b256fffbf019691dae9b40e3c452" class="src_link" title="app/uploaders/avatar_uploader.rb">app/uploaders/avatar_uploader.rb</a></td>
+        <td class="red strong">0.0 %</td>
+        <td>50</td>
+        <td>6</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#c0996ce53b3028625ed23eea04c5938282fbb985" class="src_link" title="app/uploaders/image_uploader.rb">app/uploaders/image_uploader.rb</a></td>
+        <td class="red strong">75.0 %</td>
+        <td>47</td>
+        <td>4</td>
+        <td>3</td>
+        <td>1</td>
+        <td>0.8</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+        
       </div>
     
       <div id="footer">
@@ -605,7 +982,7 @@
     
       <div class="source_files">
       
-        <div class="source_table" id="d738e296e2c10c603b8b13291849969488ecb1f3">
+        <div class="source_table" id="ac3a0e1cfaa01e8bfd6588db328f7d6a0411eea6">
   <div class="header">
     <h3>app/channels/application_cable/channel.rb</h3>
     <h4><span class="red">0.0 %</span> covered</h4>
@@ -648,7 +1025,7 @@
 </div>
 
       
-        <div class="source_table" id="ce9daf36112debeeb530d774a30f0a2033e40bb6">
+        <div class="source_table" id="eaef5e7ae34c2b3e086b829d60295ea3f3b10f20">
   <div class="header">
     <h3>app/channels/application_cable/connection.rb</h3>
     <h4><span class="red">0.0 %</span> covered</h4>
@@ -691,14 +1068,14 @@
 </div>
 
       
-        <div class="source_table" id="b3d69a744dea7ca94a74984f638abf57b0d7e747">
+        <div class="source_table" id="67a838c572d8dc86cbe9e1d7b976f573ced51c2b">
   <div class="header">
     <h3>app/controllers/application_controller.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">70.0 %</span> covered</h4>
     <div>
-      <b>1</b> relevant lines. 
-      <span class="green"><b>1</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>10</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
   </div>
   
@@ -711,7 +1088,91 @@
           <code class="ruby">class ApplicationController &lt; ActionController::Base</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="2">
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_action :authenticate_farmer!</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  include Pundit</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def user_not_authorized</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">      flash[:warning] = &quot;You are not authorized to perform this action.&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">      redirect_to(request.referrer || root_path)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def current_user</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">  		current_farmer</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">end</code>
@@ -722,14 +1183,14 @@
 </div>
 
       
-        <div class="source_table" id="f9932dc70696a507e01309c3250f3c37e02865b4">
+        <div class="source_table" id="d8e8c73d3a102f408387008fc66ad0dd4dc47dbe">
   <div class="header">
     <h3>app/controllers/farmer_instruments_controller.rb</h3>
-    <h4><span class="yellow">80.95 %</span> covered</h4>
+    <h4><span class="red">34.62 %</span> covered</h4>
     <div>
-      <b>21</b> relevant lines. 
-      <span class="green"><b>17</b> lines covered</span> and
-      <span class="red"><b>4</b> lines missed.</span>
+      <b>26</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>17</b> lines missed.</span>
     </div>
   </div>
   
@@ -742,20 +1203,1851 @@
           <code class="ruby">class FarmerInstrumentsController &lt; ApplicationController</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="2">
           
-          <code class="ruby">	def index</code>
+          
+          <code class="ruby">	# before_action :set_farmer_instrument, only: [:show, :edit, :update, :destroy]</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
+          <code class="ruby">	def index</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
+          
           <code class="ruby">		@ads = FarmerInstrument.all.includes(:farmer,:instrument)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">		@query= Farmer.all.order(:first_name,:last_name)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">		authorize @ads</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
+          
+          <code class="ruby">	def show</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">		@ad = FarmerInstrument.find(params[:id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">		@farmer_data = @ad.farmer</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
+          
+          <code class="ruby">		@instrument_data = @ad.instrument</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
+          <code class="ruby">		authorize @ad</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">		#@farmer_list = Farmer.all.collect{|u| [u.first_name,u.id]}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">		#@instrument_lsit = Instrument.all.collect{|u| [u.name,u.id]}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def create</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">		#render plain: params[:farmer_instrument].inspect</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">		#byebug</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="24">
+          
+          
+          <code class="ruby">		@ad = FarmerInstrument.create(permit_params)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"> 		#redirect_to farmer_instruments_path(@advertisement)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="26">
+          
+          
+          <code class="ruby">		authorize @ad</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
+          
+          <code class="ruby"> 		redirect_to farmer_instruments_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def edit</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="32">
+          
+          
+          <code class="ruby">		@ad_to_edit = FarmerInstrument.find(params[:id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="33">
+          
+          
+          <code class="ruby">		authorize @ad_to_edit</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">	&quot;&quot;&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">	def update</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">		@update_form=FarmerInstrument.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">		@update_form.update(:rent_per_hour:params[])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby">	&quot;&quot;&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def destroy</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="42">
+          
+          
+          <code class="ruby">  	@ad = FarmerInstrument.find(params[:id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="43">
+          
+          
+          <code class="ruby">		authorize @ad</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="44">
+          
+          
+          <code class="ruby">  	@ad.destroy</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="45">
+          
+          
+          <code class="ruby">		redirect_to farmer_instruments_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def permit_params</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="51">
+          
+          
+          <code class="ruby">		params.require(:farmer_instrument).permit(:rent_per_hour, :deposit,:farmer_id,:instrument_id,:available_from, :available_to,:is_available)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="38e64d272b1d7d6fa464d42b0fead81c4498c1be">
+  <div class="header">
+    <h3>app/controllers/farmers/confirmations_controller.rb</h3>
+    <h4><span class="red">0.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"># frozen_string_literal: true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
+          
+          <code class="ruby">class Farmers::ConfirmationsController &lt; Devise::ConfirmationsController</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  # GET /resource/confirmation/new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  # def new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  # POST /resource/confirmation</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  # def create</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  # GET /resource/confirmation?confirmation_token=abcdef</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  # def show</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  # protected</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  # The path used after resending confirmation instructions.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  # def after_resending_confirmation_instructions_path_for(resource_name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  #   super(resource_name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  # The path used after confirmation.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  # def after_confirmation_path_for(resource_name, resource)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  #   super(resource_name, resource)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="30">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="a1f8ff8c400b9ad0b85309492fd9391fcddca5e3">
+  <div class="header">
+    <h3>app/controllers/farmers/omniauth_callbacks_controller.rb</h3>
+    <h4><span class="red">0.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"># frozen_string_literal: true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
+          
+          <code class="ruby">class Farmers::OmniauthCallbacksController &lt; Devise::OmniauthCallbacksController</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  # You should configure your model like this:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  # devise :omniauthable, omniauth_providers: [:twitter]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  # You should also create an action method in this controller like this:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  # def twitter</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  # More info at:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  # https://github.com/plataformatec/devise#omniauth</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  # GET|POST /resource/auth/twitter</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  # def passthru</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  # GET|POST /users/auth/twitter/callback</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  # def failure</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  # protected</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  # The path used when OmniAuth fails</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  # def after_omniauth_failure_path_for(scope)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  #   super(scope)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="30">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="2e5e468cbbca0ab49a3b70804ef91ba8eeaaf109">
+  <div class="header">
+    <h3>app/controllers/farmers/passwords_controller.rb</h3>
+    <h4><span class="red">0.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"># frozen_string_literal: true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
+          
+          <code class="ruby">class Farmers::PasswordsController &lt; Devise::PasswordsController</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  # GET /resource/password/new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  # def new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  # POST /resource/password</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  # def create</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  # GET /resource/password/edit?reset_password_token=abcdef</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  # def edit</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  # PUT /resource/password</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  # def update</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  # protected</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  # def after_resetting_password_path_for(resource)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  #   super(resource)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">  # The path used after sending reset password instructions</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">  # def after_sending_reset_password_instructions_path_for(resource_name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">  #   super(resource_name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="34">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="0988c3c0b8248d9bab27609be0d2efa510e92187">
+  <div class="header">
+    <h3>app/controllers/farmers/registrations_controller.rb</h3>
+    <h4><span class="red">0.0 %</span> covered</h4>
+    <div>
+      <b>13</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>13</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"># frozen_string_literal: true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
+          
+          <code class="ruby">class Farmers::RegistrationsController &lt; Devise::RegistrationsController</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  # before_action :configure_sign_up_params, only: [:create]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  # before_action :configure_account_update_params, only: [:update]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  # GET /resource/sign_up</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  # def new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  # POST /resource</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">  # def create</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  # GET /resource/edit</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">  # def edit</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  # PUT /resource</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  # def update</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  # DELETE /resource</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  # def destroy</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">  # GET /resource/cancel</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">  # Forces the session data which is usually expired after sign</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">  # in to be expired now. This is useful if the user wants to</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">  # cancel oauth signing in/up in the middle of the process,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">  # removing all OAuth session data.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">  # def cancel</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">  # protected</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">  # If you have extra params to permit, append them to the sanitizer.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">  # def configure_sign_up_params</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">  #   devise_parameter_sanitizer.permit(:sign_up, keys: [:attribute])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">  # If you have extra params to permit, append them to the sanitizer.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby">  # def configure_account_update_params</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby">  #   devise_parameter_sanitizer.permit(:account_update, keys: [:attribute])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby">  # The path used after sign up.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby">  # def after_sign_up_path_for(resource)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby">  #   super(resource)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby">  # The path used after sign up for inactive accounts.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby">  # def after_inactive_sign_up_path_for(resource)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby">  #   super(resource)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="61">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="62">
+          
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="63">
+          
+          
+          <code class="ruby">     super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
+          <code class="ruby">     #UserMailer.admin_approval_email(@user).deliver_now #This is the line we are adding</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="65">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="66">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="67">
+          
+          
+          <code class="ruby">...</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="69">
+          
+          
+          <code class="ruby">private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="70">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="71">
+          
+          
+          <code class="ruby">  def sign_up_params</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="72">
+          
+          
+          <code class="ruby">    params.require(:farmer).permit(:email, :password, :password_confirmation, :first_name,:last_name,:mobile_number)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="73">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="75">
+          
+          
+          <code class="ruby">  def account_update_params</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="76">
+          
+          
+          <code class="ruby">    params.require(:farmer).permit(:email, :password, :password_confirmation, :first_name,:last_name,:mobile_number)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="77">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="78">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="d40978c41b2cc048f23dc0a2caf5921b40a38f0c">
+  <div class="header">
+    <h3>app/controllers/farmers/sessions_controller.rb</h3>
+    <h4><span class="red">0.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"># frozen_string_literal: true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
+          
+          <code class="ruby">class Farmers::SessionsController &lt; Devise::SessionsController</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  # before_action :configure_sign_in_params, only: [:create]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  # GET /resource/sign_in</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  # def new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  # POST /resource/sign_in</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  # def create</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  # DELETE /resource/sign_out</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  # def destroy</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  # protected</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  # If you have extra params to permit, append them to the sanitizer.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  # def configure_sign_in_params</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  #   devise_parameter_sanitizer.permit(:sign_in, keys: [:attribute])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="2fbafe493ee8aa48a471c77cffcd512f8f48910b">
+  <div class="header">
+    <h3>app/controllers/farmers/unlocks_controller.rb</h3>
+    <h4><span class="red">0.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"># frozen_string_literal: true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
+          
+          <code class="ruby">class Farmers::UnlocksController &lt; Devise::UnlocksController</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  # GET /resource/unlock/new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  # def new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  # POST /resource/unlock</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  # def create</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  # GET /resource/unlock?unlock_token=abcdef</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  # def show</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  #   super</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  # protected</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  # The path used after sending unlock password instructions</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  # def after_sending_unlock_instructions_path_for(resource)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  #   super(resource)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  # The path used after unlocking the resource</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  # def after_unlock_path_for(resource)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  #   super(resource)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="30">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="16d5b8e2b6f201e32fd3f6110f07c3a0f2cf4a0d">
+  <div class="header">
+    <h3>app/controllers/farmers_controller.rb</h3>
+    <h4><span class="red">47.37 %</span> covered</h4>
+    <div>
+      <b>19</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>10</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class FarmersController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
+          
+          <code class="ruby">		@farmers = Farmer.all()</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
           
           <code class="ruby">		@query= Farmer.all.order(:first_name,:last_name)</code>
         </li>
@@ -778,22 +3070,22 @@
           <code class="ruby">	def show</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="8">
           
-          <code class="ruby">		@ad = FarmerInstrument.find(params[:id])</code>
+          
+          <code class="ruby">		@farmer_data = Farmer.find(params[:id])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="9">
           
-          <code class="ruby">		@farmer_data = @ad.farmer</code>
+          
+          <code class="ruby">		#@farmer_data = @ad.farmer</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="10">
           
-          <code class="ruby">		@instrument_data = @ad.instrument</code>
+          
+          <code class="ruby">		#@instrument_data = @ad.instrument</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
@@ -823,7 +3115,7 @@
         <li class="never" data-hits="" data-linenumber="15">
           
           
-          <code class="ruby">		#@instrument_lsit = Instrument.all.collect{|u| [u.name,u.id]} </code>
+          <code class="ruby">		#@instrument_lsit = Instrument.all.collect{|u| [u.name,u.id]}</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
@@ -859,7 +3151,7 @@
         <li class="missed" data-hits="0" data-linenumber="21">
           
           
-          <code class="ruby">		@ad = FarmerInstrument.create(permit_params)</code>
+          <code class="ruby">		@ad = Farmer.create(permit_params)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
@@ -871,13 +3163,13 @@
         <li class="missed" data-hits="0" data-linenumber="23">
           
           
-          <code class="ruby"> 		redirect_to farmer_instrument_path(@ad)</code>
+          <code class="ruby"> 		redirect_to farmer_path(@ad)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
           
           
-          <code class="ruby"> 		</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
@@ -901,7 +3193,7 @@
         <li class="missed" data-hits="0" data-linenumber="28">
           
           
-          <code class="ruby">		@ad_to_edit = FarmerInstrument.find(params[:id])</code>
+          <code class="ruby">		@farmer_to_edit = Farmer.find(params[:id])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
@@ -952,22 +3244,22 @@
           <code class="ruby">	def destroy</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="37">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="37">
           
-          <code class="ruby">  	@ad = FarmerInstrument.find(params[:id])</code>
+          
+          <code class="ruby">  	@farmer_entry = Farmer.find(params[:id])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="38">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="38">
           
-          <code class="ruby">  	@ad.destroy</code>
+          
+          <code class="ruby">  	@farmer_entry.destroy</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="39">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="39">
           
-          <code class="ruby">		redirect_to farmer_instruments_path</code>
+          
+          <code class="ruby">		redirect_to farmers_path</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="40">
@@ -985,7 +3277,7 @@
         <li class="covered" data-hits="1" data-linenumber="42">
           <span class="hits">1</span>
           
-          <code class="ruby">	private </code>
+          <code class="ruby">	private</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="43">
@@ -1003,7 +3295,7 @@
         <li class="missed" data-hits="0" data-linenumber="45">
           
           
-          <code class="ruby">		params.require(:farmer_instrument).permit(:rent_per_hour, :deposit,:farmer_id,:instrument_id,:available_from, :available_to)</code>
+          <code class="ruby">		params.require(:farmer).permit(:first_name,:last_name,:mobile_number,:email)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
@@ -1023,7 +3315,483 @@
 </div>
 
       
-        <div class="source_table" id="6c7e64e9442e42bead0a40fcbf4040a00a493702">
+        <div class="source_table" id="bbc6648aab0ef4350abc6fa85b4b19522c935ef2">
+  <div class="header">
+    <h3>app/controllers/instruments_controller.rb</h3>
+    <h4><span class="red">47.37 %</span> covered</h4>
+    <div>
+      <b>19</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>10</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class InstrumentsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
+          
+          <code class="ruby">		@instruments = Instrument.all()</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
+          
+          <code class="ruby">		@query= Instrument.all.order(:name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def show</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">		@instrument_data = Instrument.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">		#@farmer_data = @ad.farmer</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">		#@instrument_data = @ad.instrument</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">		#@farmer_list = Farmer.all.collect{|u| [u.first_name,u.id]}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">		#@instrument_lsit = Instrument.all.collect{|u| [u.name,u.id]}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def create</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">		#render plain: params[:farmer_instrument].inspect</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">		#byebug</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="21">
+          
+          
+          <code class="ruby">		@ad = Instrument.create(permit_params)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"> 		#redirect_to farmer_instruments_path(@advertisement)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="23">
+          
+          
+          <code class="ruby"> 		redirect_to new_farmer_instrument_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def edit</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="28">
+          
+          
+          <code class="ruby">		@instrument_to_edit = Instrument.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">	&quot;&quot;&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">	def update</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">		@update_form=FarmerInstrument.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">		@update_form.update(:rent_per_hour:params[])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">	&quot;&quot;&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def destroy</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="37">
+          
+          
+          <code class="ruby">  	@instrument_entry = Instrument.find(params[:id])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="38">
+          
+          
+          <code class="ruby">  	@instrument_entry.destroy</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="39">
+          
+          
+          <code class="ruby">		redirect_to instruments_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def permit_params</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="45">
+          
+          
+          <code class="ruby">		params.require(:instrument).permit(:name,:brand,:specification, :image)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="4a2a25e441aa866299f88595cc8868ef2769b574">
+  <div class="header">
+    <h3>app/controllers/rents_controller.rb</h3>
+    <h4><span class="red">46.67 %</span> covered</h4>
+    <div>
+      <b>15</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>8</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class RentsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
+          
+          <code class="ruby">    @rents = Rent.all</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
+          
+          <code class="ruby">    @ads = FarmerInstrument.all.includes(:farmer, :instrument)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">def show</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">  @specadd = Rent.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">def new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">def create</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="15">
+          
+          
+          <code class="ruby">  @rents = Rent.create(permit_params)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="16">
+          
+          
+          <code class="ruby">  @instrument_rec=FarmerInstrument.find(@rents.farmer_instrument_id)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
+          
+          <code class="ruby">  @instrument_rec.update(is_available: false)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="18">
+          
+          
+          <code class="ruby">  redirect_to rents_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">def permit_params</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="24">
+          
+          
+          <code class="ruby">  params[:rent].permit(:farmer_instrument_id, :farmer_id, :from, :to)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="dbf73f6bc86a6aec1ceb1760b4650932403c700f">
   <div class="header">
     <h3>app/helpers/application_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1054,7 +3822,7 @@
 </div>
 
       
-        <div class="source_table" id="884f00c5fd618b3357e01b57172df75cf1f3fbc5">
+        <div class="source_table" id="d81bfc882330a57ba6de165111e7f79325b461a9">
   <div class="header">
     <h3>app/helpers/farmer_instruments_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1085,7 +3853,100 @@
 </div>
 
       
-        <div class="source_table" id="1a0a4db920b16f83e1da436cf323410891639cbc">
+        <div class="source_table" id="c738de62708b0079fc810d3cade290398b3f8859">
+  <div class="header">
+    <h3>app/helpers/farmers_helper.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module FarmersHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="51df391c3f0a9b34a0a143042da1d8152eb9dc7f">
+  <div class="header">
+    <h3>app/helpers/instruments_helper.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module InstrumentsHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="3d53efd0d657f4b0c23a4ceadc371a84a3b40a2e">
+  <div class="header">
+    <h3>app/helpers/rents_helper.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module RentsHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="f50c76163fb3dc712cc99dce2845dfcab514b433">
   <div class="header">
     <h3>app/jobs/application_job.rb</h3>
     <h4><span class="red">0.0 %</span> covered</h4>
@@ -1116,7 +3977,7 @@
 </div>
 
       
-        <div class="source_table" id="e8d20523ac6c67d870585e2f78fb8ed5740b3ce7">
+        <div class="source_table" id="a8a54e478f3aa9c0218d73a391b89b6bcf2e0bd3">
   <div class="header">
     <h3>app/mailers/application_mailer.rb</h3>
     <h4><span class="red">0.0 %</span> covered</h4>
@@ -1159,7 +4020,7 @@
 </div>
 
       
-        <div class="source_table" id="21ab39650d7eda5c8f05b85873df0355e745a2df">
+        <div class="source_table" id="861b270609a5bbf01ffed3d4794393b03c5042c9">
   <div class="header">
     <h3>app/models/address.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1214,7 +4075,7 @@
 </div>
 
       
-        <div class="source_table" id="c9ac1113ed01eafd35cfdc11586237fda37b21bf">
+        <div class="source_table" id="b22bedf5ca8a838f467b671408d24d889021fc71">
   <div class="header">
     <h3>app/models/application_record.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1251,14 +4112,14 @@
 </div>
 
       
-        <div class="source_table" id="28a8219d3825e1ed3ca32a1462e593f3f578fc14">
+        <div class="source_table" id="7a85c7ffc05c1b2ffe17e78c3882908418e2dad0">
   <div class="header">
     <h3>app/models/farmer.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="yellow">82.35 %</span> covered</h4>
     <div>
-      <b>16</b> relevant lines. 
-      <span class="green"><b>16</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>17</b> relevant lines. 
+      <span class="green"><b>14</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
   </div>
   
@@ -1271,136 +4132,136 @@
           <code class="ruby">class Farmer &lt; ApplicationRecord</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="2">
           
-          <code class="ruby">	validates :mobile_number, :first_name, :last_name, presence: true</code>
+          
+          <code class="ruby">  # Include default devise modules. Others available are:</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="3">
           
-          <code class="ruby">	validates :mobile_number, uniqueness: true</code>
+          
+          <code class="ruby">  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i</code>
+          <code class="ruby">  devise :database_authenticatable, :registerable,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="5">
           
-          <code class="ruby">	validates :email, presence: true, format: { with: VALID_EMAIL_REGEX }</code>
+          
+          <code class="ruby">         :recoverable, :rememberable, :validatable</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">	has_one :address</code>
+          <code class="ruby">	validates :mobile_number, :first_name, :last_name, presence: true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">	validates :mobile_number, uniqueness: true</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">	has_many :farmer_instruments</code>
+          <code class="ruby">	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">	has_many :instruments, :through =&gt; :farmer_instruments</code>
+          <code class="ruby">	validates :email, presence: true, uniqueness:true, format: { with: VALID_EMAIL_REGEX }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	has_one :address</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
+        <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">	has_many :rents</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby">	#has_many :farmer_instruments, :through =&gt; :rents</code>
+          <code class="ruby">	has_many :farmer_instruments</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
-          <code class="ruby">	has_many :rented_instruments, :through =&gt; :rents, class_name: &#39;Rent&#39;,foreign_key: &#39;farmer_instrument_id&#39;</code>
+          <code class="ruby">	has_many :instruments, :through =&gt; :farmer_instruments</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
           
           
-          <code class="ruby">	</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
-          <code class="ruby">	after_save :titleize_names</code>
+          <code class="ruby">	has_many :rents</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">	#has_many :farmer_instruments, :through =&gt; :rents</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">	def titleize_names</code>
+          <code class="ruby">	has_many :rented_instruments, :through =&gt; :rents, class_name: &#39;Rent&#39;,foreign_key: &#39;farmer_instrument_id&#39;</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="18">
-          <span class="hits">5</span>
-          
-          <code class="ruby">		self.first_name = self.first_name.titleize</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="19">
-          <span class="hits">5</span>
-          
-          <code class="ruby">		self.last_name = self.last_name.titleize</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="20">
-          
-          
-          <code class="ruby">	end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="22">
+        <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
-          <code class="ruby">	def full_name</code>
+          <code class="ruby">	after_save :titleize_names</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="23">
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">		self.first_name.to_s+ &quot; &quot; +self.last_name.to_s</code>
+          <code class="ruby">	def titleize_names</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
+          
+          <code class="ruby">		self.first_name = self.first_name.titleize</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="23">
+          
+          
+          <code class="ruby">		self.last_name = self.last_name.titleize</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
@@ -1415,16 +4276,34 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">end</code>
+          <code class="ruby">	def full_name</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
+          
+          <code class="ruby">		self.first_name.to_s+ &quot; &quot; +self.last_name.to_s</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
           
           
           <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">end</code>
         </li>
       
     </ol>
@@ -1432,14 +4311,14 @@
 </div>
 
       
-        <div class="source_table" id="062308ae20d29003cd10d693df1f40d3c85b956e">
+        <div class="source_table" id="8914a7fa72fb009958de8a494a577c9ebd2eab5a">
   <div class="header">
     <h3>app/models/farmer_instrument.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">70.0 %</span> covered</h4>
     <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>10</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
   </div>
   
@@ -1467,7 +4346,7 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">	belongs_to :instrument  </code>
+          <code class="ruby">	belongs_to :instrument</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
@@ -1479,10 +4358,58 @@
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">	has_many :borrowers, through: :rents, class_name: &quot;Farmer&quot;, foreign_key: &#39;farmer_id&#39;	</code>
+          <code class="ruby">	has_many :borrowers, through: :rents, class_name: &quot;Farmer&quot;, foreign_key: &#39;farmer_id&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def change_status</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">		if(is_available)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">			is_available=false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">		else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
+          
+          <code class="ruby">			is_available=true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">		end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">end</code>
@@ -1493,13 +4420,13 @@
 </div>
 
       
-        <div class="source_table" id="d5e32e7eff259f43fa924655a3af751e6203e4fb">
+        <div class="source_table" id="070321a931456a00b063c44762235f1f2a3c7326">
   <div class="header">
     <h3>app/models/instrument.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1531,13 +4458,19 @@
           <code class="ruby">	has_many :farmers, :through =&gt; :farmer_instruments</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">	</code>
+          <code class="ruby">	mount_uploader :image, ImageUploader</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby">end</code>
@@ -1548,7 +4481,7 @@
 </div>
 
       
-        <div class="source_table" id="63cbbb2b3a30c12e73117a053409fb942e6a7cff">
+        <div class="source_table" id="fecbb19fb550ac767f3a526e6ae1bd18de340162">
   <div class="header">
     <h3>app/models/rent.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1596,6 +4529,1313 @@
           
           
           <code class="ruby"></code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="4812b1c099d161792ed42df89bfe77e535ec15c5">
+  <div class="header">
+    <h3>app/policies/application_policy.rb</h3>
+    <h4><span class="red">0.0 %</span> covered</h4>
+    <div>
+      <b>41</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>41</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="missed" data-hits="0" data-linenumber="1">
+          
+          
+          <code class="ruby">class ApplicationPolicy</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="2">
+          
+          
+          <code class="ruby">  attr_reader :farmer, :record</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
+          
+          <code class="ruby">  def initialize(farmer, record)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">    @farmer = farmer</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">    @record = record</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">  def index?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">    false</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
+          <code class="ruby">  def show?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">    scope.where(:id =&gt; record.id).exists?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
+          
+          <code class="ruby">  def create?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="18">
+          
+          
+          <code class="ruby">    false</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="21">
+          
+          
+          <code class="ruby">  def new?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
+          
+          <code class="ruby">    create?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="23">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="25">
+          
+          
+          <code class="ruby">  def update?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="26">
+          
+          
+          <code class="ruby">    false</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="29">
+          
+          
+          <code class="ruby">  def edit?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="30">
+          
+          
+          <code class="ruby">    update?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="31">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="33">
+          
+          
+          <code class="ruby">  def destroy?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="34">
+          
+          
+          <code class="ruby">    false</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="35">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="37">
+          
+          
+          <code class="ruby">  def scope</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="38">
+          
+          
+          <code class="ruby">    Pundit.policy_scope!(@farmer, record.class)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="39">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="41">
+          
+          
+          <code class="ruby">  class Scope</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="42">
+          
+          
+          <code class="ruby">    attr_reader :farmer, :scope</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="44">
+          
+          
+          <code class="ruby">    def initialize(farmer, scope)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="45">
+          
+          
+          <code class="ruby">      @farmer = farmer</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="46">
+          
+          
+          <code class="ruby">      @scope = scope</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="47">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="49">
+          
+          
+          <code class="ruby">    def resolve</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="50">
+          
+          
+          <code class="ruby">      scope</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="51">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="52">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="53">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="2c6cd8cff44e4492173f1424d0331e46fe494b0c">
+  <div class="header">
+    <h3>app/policies/farmer_instrument_policy.rb</h3>
+    <h4><span class="red">0.0 %</span> covered</h4>
+    <div>
+      <b>18</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>18</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby">#app/policies/farmer_instrument_policy.rb</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
+          
+          <code class="ruby">class FarmerInstrumentPolicy &lt; ApplicationPolicy</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  # alias_method :current_user, :current_farmer</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">  def index?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="7">
+          
+          
+          <code class="ruby">    true</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">  def create?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">    farmer.present?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">  def update?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="15">
+          
+          
+          <code class="ruby">    return true if farmer.present? &amp;&amp; farmer.id == farmer_instrument.farmer_id</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="18">
+          
+          
+          <code class="ruby">  def destroy?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="19">
+          
+          
+          <code class="ruby">    return true if farmer.present? &amp;&amp; farmer.id == farmer_instrument.farmer_id</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="20">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="24">
+          
+          
+          <code class="ruby">    def farmer_instrument</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="25">
+          
+          
+          <code class="ruby">      record</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="26">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="c75e599b3a1833ba35914b22949a2bc2770601d6">
+  <div class="header">
+    <h3>app/policies/instrument_policy.rb</h3>
+    <h4><span class="red">0.0 %</span> covered</h4>
+    <div>
+      <b>20</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>20</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby">#app/policies/farmer_instrument_policy.rb</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
+          
+          <code class="ruby">class InstrumentPolicy &lt; ApplicationPolicy</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
+          
+          <code class="ruby">  def index?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">    true</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">  def create?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">    farmer.present?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">&quot;&quot;&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
+          
+          <code class="ruby">  def update?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
+          <code class="ruby">    return true if farmer.present? &amp;&amp; farmer == farmer_instrument.farmer</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="16">
+          
+          
+          <code class="ruby">  def destroy?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
+          
+          <code class="ruby">    return true if farmer.present? &amp;&amp; farmer == farmer_instrument.farmer</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="18">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="19">
+          
+          
+          <code class="ruby">&quot;&quot;&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="20">
+          
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
+          
+          <code class="ruby">    def instrument</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="23">
+          
+          
+          <code class="ruby">      record</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="24">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="25">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="513a2b16b171b256fffbf019691dae9b40e3c452">
+  <div class="header">
+    <h3>app/uploaders/avatar_uploader.rb</h3>
+    <h4><span class="red">0.0 %</span> covered</h4>
+    <div>
+      <b>6</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>6</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="missed" data-hits="0" data-linenumber="1">
+          
+          
+          <code class="ruby">class AvatarUploader &lt; CarrierWave::Uploader::Base</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">  # Include RMagick or MiniMagick support:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">  # include CarrierWave::RMagick</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  # include CarrierWave::MiniMagick</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  # Choose what kind of storage to use for this uploader:</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="7">
+          
+          
+          <code class="ruby">  storage :file</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  # storage :fog</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  # uploader = AvatarUploader.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  # uploader.store!(my_file)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  # uploader.retrieve_from_store!(&#39;my_file.png&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">  # Override the directory where uploaded files will be stored.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  # This is a sensible default for uploaders that are meant to be mounted:</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="15">
+          
+          
+          <code class="ruby">  def store_dir</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="16">
+          
+          
+          <code class="ruby">    &quot;uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  # Provide a default URL as a default if there hasn&#39;t been a file uploaded:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  # def default_url(*args)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  #   # For Rails 3.1+ asset pipeline compatibility:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  #   # ActionController::Base.helpers.asset_path(&quot;fallback/&quot; + [version_name, &quot;default.png&quot;].compact.join(&#39;_&#39;))</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  #   &quot;/images/fallback/&quot; + [version_name, &quot;default.png&quot;].compact.join(&#39;_&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  # Process files as they are uploaded:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  # process scale: [200, 300]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">  # def scale(width, height)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">  #   # do something</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">  # Create different versions of your uploaded files:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">  # version :thumb do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">  #   process resize_to_fit: [50, 50]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">  # Add a white list of extensions which are allowed to be uploaded.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby">  # For images you might use something like this:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">  # def extension_whitelist</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby">  #   %w(jpg jpeg gif png)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">  # Override the filename of the uploaded files:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">  # Avoid using model.id or version_name here, see uploader/store.rb for details.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">  # def filename</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">  #   &quot;something.jpg&quot; if original_filename</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="50">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="c0996ce53b3028625ed23eea04c5938282fbb985">
+  <div class="header">
+    <h3>app/uploaders/image_uploader.rb</h3>
+    <h4><span class="red">75.0 %</span> covered</h4>
+    <div>
+      <b>4</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ImageUploader &lt; CarrierWave::Uploader::Base</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">  # Include RMagick or MiniMagick support:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">  # include CarrierWave::RMagick</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  # include CarrierWave::MiniMagick</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  # Choose what kind of storage to use for this uploader:</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  storage :file</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  # storage :fog</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  # Override the directory where uploaded files will be stored.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  # This is a sensible default for uploaders that are meant to be mounted:</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def store_dir</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
+          <code class="ruby">    &quot;uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  # Provide a default URL as a default if there hasn&#39;t been a file uploaded:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  # def default_url(*args)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">  #   # For Rails 3.1+ asset pipeline compatibility:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  #   # ActionController::Base.helpers.asset_path(&quot;fallback/&quot; + [version_name, &quot;default.png&quot;].compact.join(&#39;_&#39;))</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  #   &quot;/images/fallback/&quot; + [version_name, &quot;default.png&quot;].compact.join(&#39;_&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  # Process files as they are uploaded:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  # process scale: [200, 300]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  # def scale(width, height)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  #   # do something</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">  # Create different versions of your uploaded files:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">  # version :thumb do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">  #   process resize_to_fit: [50, 50]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">  # Add a white list of extensions which are allowed to be uploaded.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">  # For images you might use something like this:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">  # def extension_whitelist</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">  #   %w(jpg jpeg gif png)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby">  # Override the filename of the uploaded files:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">  # Avoid using model.id or version_name here, see uploader/store.rb for details.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">  # def filename</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">  #   &quot;something.jpg&quot; if original_filename</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">end</code>
         </li>
       
     </ol>
